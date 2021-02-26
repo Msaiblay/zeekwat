@@ -16,7 +16,7 @@ class CreateSubcatagoriesTable extends Migration
         Schema::create('subcatagories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreignId('category_id')->references('id')->on('tcourses')->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

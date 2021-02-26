@@ -17,7 +17,7 @@ class CreateChaptersTable extends Migration
             $table->id();
             $table->string('name');
 
-            $table->foreignId('course_id')->references('id')->on('courses')->onDelete('cascade');
+            $table->foreignId('course_id')->references('id')->on('tcourses')->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

@@ -13,7 +13,7 @@ class CreateCoursesTable extends Migration
      */
     public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('tcourses', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('coverphoto');
@@ -27,7 +27,7 @@ class CreateCoursesTable extends Migration
 
             $table->foreignId('teacher_id')->references('id')->on('teachers')->onDelete('cascade');
             $table->foreignId('language_id')->references('id')->on('languages')->onDelete('cascade');
-//            $table->foreignId('category_id')->references('id')->on('categories')->onDelete('cascade');
+//            $table->foreignId('category_id')->references('id')->on('tcourses')->onDelete('cascade');
             $table->foreignId('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
 
 
@@ -43,6 +43,6 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('tcourses');
     }
 }
