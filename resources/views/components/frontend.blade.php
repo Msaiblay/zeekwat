@@ -34,6 +34,75 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+    <style>
+        body {
+            background-color: #eeeeee59
+        }
+
+        .footer-subscribe input[type=text] {
+            border: 1px solid #ff3514;
+            border-radius: 55px;
+            font-size: 12px;
+            padding: 12px 40% 12px 20px;
+            background: transparent;
+            width: 98%;
+            box-shadow: none !important
+        }
+
+        .mt-100 {
+            margin-top: 200px
+        }
+
+        a,
+        button[type="submit"],
+        input[type=text] {
+            color: #333;
+            text-decoration: none;
+            -webkit-transition: all 400ms ease-in-out;
+            -moz-transition: all 400ms ease-in-out;
+            -o-transition: all 400ms ease-in-out;
+            -ms-transition: all 400ms ease-in-out;
+            transition: all 400ms ease-in-out
+        }
+
+        .footer-subscribe .btn-theme {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            right: 0
+        }
+
+        .btn-theme:hover {
+            box-shadow: none
+        }
+
+        .btn-theme {
+            color: #FFF !important;
+            padding: 0.5rem 1.9rem;
+            font-weight: 400;
+            font-size: 0.875rem;
+            display: inline-block;
+            display: inline-flex;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 2;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
+            -moz-box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
+            box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
+            -webkit-border-radius: 70px;
+            -moz-border-radius: 70px;
+            border-radius: 70px
+        }
+
+        .bg-orange {
+            background: #ff3514
+        }
+    </style>
 </head>
 
 <body>
@@ -42,19 +111,13 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+        <h1 class="logo"><a href="index.html">Zeekwat</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="trainers.html">Trainers</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li class="drop-down"><a href="">Drop Down</a>
+                <li class="drop-down"><a href="">Categories</a>
                     <ul>
                         <li><a href="#">Drop Down 1</a></li>
                         <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -76,7 +139,8 @@
             </ul>
         </nav><!-- .nav-menu -->
 
-        <a href="courses.html" class="get-started-btn">Get Started</a>
+        <a href="courses.html" class="get-started-btn">Login</a>
+        <a href="courses.html" class="get-started-btn">sign up</a>
 
     </div>
 </header><!-- End Header -->
@@ -177,3 +241,9 @@
 </body>
 
 </html>
+<script>
+    import Input from "@/Jetstream/Input";
+    export default {
+        components: {Input}
+    }
+</script>
