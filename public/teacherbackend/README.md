@@ -1,103 +1,69 @@
-CoolAdmin Bootstrap 4.1 Admin Dashboard Template
-================================================
+<a href="http://www.bootstrapdash.com/demo/purple-admin-free" target="_blank"><img src="screenshot.jpg"></a>
 
-**CoolAdmin** is a responsive Bootstrap 4.1 admin template. It provides you with
-a collection of ready to use code snippets and utilities, custom pages, loads of
-charts, 4 different dashboard variations, a collection of applications and some
-useful widgets. Preview of this awesome admin template available here:
-https://colorlib.com/polygon/cooladmin/index.html
+<h1>PurpleAdmin-Free-Admin-Template</h1>
+Purple Admin is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
 
-Preview
-=======
+Purple Admin is packed with all the features that fit your needs but not cramped with components you would not even use. It is an excellent fit to build admin panels, e-commerce systems,  project management systems, CMS or CRM.
 
-### Screenshot
+Although the template has a design like none other, it is easily customizable to suit your requirements. Purple Admin comes with a clean and well-commented code that makes it easy to work with the template. Thus making it an ideal pick for jump starting your project.
 
-![CoolAdmin admin dashboard template preview](media/9606031aabebde32fa96edeff071a132.jpg)
 
-CoolAdmin admin dashboard template preview
+<h1>Credits:</h1>
 
-### Demo Site: [[Here]](https://colorlib.com/polygon/cooladmin/index.html)
+- Bootstrap 4
+- Material Design Icons
+- jQuery
+- Gulp
+- Chart.js
 
-### TOC
+<h1>Browser Support:</h1>
 
--   [Built With](#built-with)
+Purple Admin is designed to work flawlessly with all the latest and modern web browsers.
 
--   [Changelog](#changelog)
+- Chrome (latest)
+- FireFox (latest)
+- Safari (latest)
+- Opera (latest)
+- IE10+  
 
--   [Authors](#authors)
+<h1>License Information:</h1>
 
--   [License](#license)
 
-### Built With
+Purple Admin is released under MIT license. Purple Admin is a free Bootstrap 4 admin template developed from BootstrapDash. Feel free to download it, use it, share it, get creative with it.
 
--   [Accordion.JS](https://github.com/awps/Accordion.JS)
+<h1>How to use Purple Admin?</h1>
 
--   [animsition](http://blivesta.github.io/animsition)
 
--   [bootstrap-progressbar](https://github.com/minddust/bootstrap-progressbar)
+1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template.git in you terminal to get a copy of this template.
 
--   [Bootstrap](http://getbootstrap.com/)
+2 - After the files have been downloaded you will get a folder with all the required files
 
--   [Chart.js](http://www.chartjs.org/)
+3 - You can install all the dependencies in the template by running the command npm install. All the required files are in the node modules.
 
--   [Counter-Up](https://github.com/bfintal/Counter-Up)
+4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
 
--   [CSS Hamburgers](https://github.com/jonsuh/hamburgers)
+5 - Now that your project has now kick-started, all you need to do now is to code, code, and code to your heart's content.
 
--   [Full Calendar](https://fullcalendar.io)
+<h1>How to Contribute?:</h1>
 
--   [Fontawesome](http://fontawesome.io/)
 
--   [jquery-circle-progress](http://kottenator.github.io/jquery-circle-progress/)
+We love your contributions and we welcome them wholeheartedly. We believe the more the merrier.
+To contribute make sure you have a Node.js and npm installed. Now run the command gulp --version. If the command returns with the Gulp version number, it means you have Gulp installed. If not you need to run the command npm install --global gulp-cli to install Gulp.
 
--   [jQuery](https://jquery.com/)
+<h2>Next</h2>
 
--   [Date picker](https://www.jqueryscript.net/time-clock/Date-Time-Picker-Bootstrap-4.html)
-
--   [JQVMap](https://jqvmap.com/)
-
--   [Lightbox2](https://github.com/lokesh/lightbox2)
-
--   [Material Design
-    Icons](https://github.com/Templarian/MaterialDesign-Webfont)
-
--   [perfect-scrollbar](https://github.com/utatti/perfect-scrollbar)
-
--   [ProgressBar.js](https://github.com/kimmobrunfeldt/progressbar.js)
-
--   [Select2](https://github.com/select2/select2)
-
--   [Slick](http://kenwheeler.github.io/slick/)
-
--   [Sweetalwer](https://github.com/sweetalert2/sweetalert2)
-
--   [The Final Countdown for jQuery](http://hilios.github.io/jQuery.countdown/)
-
--   [WOW](https://github.com/matthieua/WOW)
-
-### Changelog
-
-#### V 1.0.0
-
-Initial Release \#\#\# Authors [Colorlib](https://colorlib.com)
-
-### More info
-
--   [Bootstrap
-    dashboards](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
-
--   [Angular dashboards](https://colorlib.com/wp/angularjs-admin-templates/)
-
--   [Free Admin
-    Dashboards](https://colorlib.com/wp/free-html5-admin-dashboard-templates/)
-
--   [Website Templates](https://colorlib.com/wp/templates/)
-
--   [Free WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/)
-
-### License
-
-CoolAdmin is licensed under The MIT License (MIT). Which means that you can use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
-final products. But you always need to state that Colorlib is the original
-author of this template.
+After Gulp has been installed, follow the steps below to contribute.
+  <br>
+	1 - Fork and clone the repo of Purple Admin.
+  <br>
+	2 - Run the command npm install to install all the dependencies.
+  <br>
+	3 - Enter the command gulp serve. This will open Purple Admin in your default browser.
+  <br>
+	4 - Make your valuable contribution
+  <br>
+	5 - Submit a pull request.
+  <hr>
+	Do you need a template with more features and functionalities? Get more with our collection of the premium template with more plugins, eye catching animations, UI components, and sample pages all fitting together with a high-quality design.
+Visit
+  <a href="https://www.bootstrapdash.com" target="_blank">https://www.bootstrapdash.com</a> for more admin templates.

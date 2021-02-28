@@ -1,378 +1,549 @@
 <x-frontend>
-
-    <!-- ======= Hero Section ======= -->
-    <p>Msai</p>
-    <section id="hero" class="d-flex justify-content-center align-items-center">
-        <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Learning Today,<br>Leading Tomorrow</h1>
-            <h2>We are team of talanted designers making websites with Bootstrap</h2>
-            <a href="courses.html" class="btn-get-started">Get Started</a>
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </section><!-- End Hero -->
-
-    <main id="main">
-
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>About</h2>
-                    <p>About Us</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="font-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
+    <div class="container">
+        <div class="hero-slider">
+            <!-- slider item -->
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
+                        <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                        <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- slider item -->
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
+                        <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                        <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- slider item -->
+            <div class="hero-slider-item">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Your bright future is our mission</h1>
+                        <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
+                        <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /hero slider -->
+
+<!-- banner-feature -->
+<section class="bg-gray overflow-md-hidden">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-xl-4 col-lg-5 align-self-end">
+                <img class="img-fluid w-100" src="images/banner/banner-feature.png" alt="banner-feature">
+            </div>
+            <div class="col-xl-8 col-lg-7">
+                <div class="row feature-blocks bg-gray justify-content-between">
+                    <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                        <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+                        <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                        <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+                        <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Notice Board</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                        <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+                        <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad</p>
+                    </div>
+                    <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+                        <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+                        <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-2 order-md-1">
+                <h2 class="section-title">About Educenter</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+                <p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                <a href="about.html" class="btn btn-primary-outline">Learn more</a>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+                <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /about us -->
+
+<!-- courses -->
+<section class="section-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center section-title justify-content-between">
+                    <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
+                    <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+                    <div>
+                        <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- course list -->
+        <div class="row justify-content-center">
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
                         </ul>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        </p>
-                        <a href="about.html" class="learn-more-btn">Learn More</a>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Photography</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End About Section -->
-
-        <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts section-bg">
-            <div class="container">
-
-                <div class="row counters">
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">1232</span>
-                        <p>Students</p>
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                        </ul>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Programming</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
                     </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">64</span>
-                        <p>Courses</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">42</span>
-                        <p>Events</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">15</span>
-                        <p>Trainers</p>
-                    </div>
-
                 </div>
-
             </div>
-        </section><!-- End Counts Section -->
-
-        <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="col-lg-4 d-flex align-items-stretch">
-                        <div class="content">
-                            <h3>Why Choose Mentor?</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-                            </p>
-                            <div class="text-center">
-                                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-boxes d-flex flex-column justify-content-center">
-                            <div class="row">
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-receipt"></i>
-                                        <h4>Corporis voluptates sit</h4>
-                                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-cube-alt"></i>
-                                        <h4>Ullamco laboris ladore pan</h4>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-images"></i>
-                                        <h4>Labore consequatur</h4>
-                                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End .content-->
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                        </ul>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Lifestyle Archives</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Why Us Section -->
-
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="icon-box">
-                            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-                            <h3><a href="">Lorem Ipsum</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-                            <h3><a href="">Dolor Sitema</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-                            <h3><a href="">Sed perspiciatis</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                        <div class="icon-box">
-                            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-                            <h3><a href="">Magni Dolores</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-                            <h3><a href="">Nemo Enim</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-                            <h3><a href="">Eiusmod Tempor</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-                            <h3><a href="">Midela Teren</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-                            <h3><a href="">Pira Neve</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-                            <h3><a href="">Dirada Pack</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-disc-line" style="color: #b20969;"></i>
-                            <h3><a href="">Moton Ideal</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-                            <h3><a href="">Verdo Park</a></h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-4">
-                        <div class="icon-box">
-                            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-                            <h3><a href="">Flavor Nivelanda</a></h3>
-                        </div>
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                        </ul>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Complete Freelancing</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Features Section -->
-
-        <!-- ======= Popular Courses Section ======= -->
-        <section id="popular-courses" class="courses">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Courses</h2>
-                    <p>Popular Courses</p>
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                        </ul>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Branding Design</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+                    </div>
                 </div>
-
-                <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="course-item">
-                            <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
-                            <div class="course-content">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>Web Development</h4>
-                                    <p class="price">$169</p>
-                                </div>
-
-                                <h3><a href="course-details.html">Website Design</a></h3>
-                                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                <div class="trainer d-flex justify-content-between align-items-center">
-                                    <div class="trainer-profile d-flex align-items-center">
-                                        <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                                        <span>Antonio</span>
-                                    </div>
-                                    <div class="trainer-rank d-flex align-items-center">
-                                        <i class="bx bx-user"></i>&nbsp;50
-                                        &nbsp;&nbsp;
-                                        <i class="bx bx-heart"></i>&nbsp;65
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- End Course Item-->
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-                        <div class="course-item">
-                            <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
-                            <div class="course-content">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>Marketing</h4>
-                                    <p class="price">$250</p>
-                                </div>
-
-                                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                <div class="trainer d-flex justify-content-between align-items-center">
-                                    <div class="trainer-profile d-flex align-items-center">
-                                        <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                                        <span>Lana</span>
-                                    </div>
-                                    <div class="trainer-rank d-flex align-items-center">
-                                        <i class="bx bx-user"></i>&nbsp;35
-                                        &nbsp;&nbsp;
-                                        <i class="bx bx-heart"></i>&nbsp;42
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- End Course Item-->
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-                        <div class="course-item">
-                            <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
-                            <div class="course-content">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4>Content</h4>
-                                    <p class="price">$180</p>
-                                </div>
-
-                                <h3><a href="course-details.html">Copywriting</a></h3>
-                                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
-                                <div class="trainer d-flex justify-content-between align-items-center">
-                                    <div class="trainer-profile d-flex align-items-center">
-                                        <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-                                        <span>Brandon</span>
-                                    </div>
-                                    <div class="trainer-rank d-flex align-items-center">
-                                        <i class="bx bx-user"></i>&nbsp;20
-                                        &nbsp;&nbsp;
-                                        <i class="bx bx-heart"></i>&nbsp;85
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- End Course Item-->
-
-                </div>
-
             </div>
-        </section><!-- End Popular Courses Section -->
-
-        <!-- ======= Trainers Section ======= -->
-        <section id="trainers" class="trainers">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Trainers</h2>
-                    <p>Our Professional Trainers</p>
+            <!-- course item -->
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card p-0 border-primary rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
+                    <div class="card-body">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+                            <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+                        </ul>
+                        <a href="course-single.html">
+                            <h4 class="card-title">Art Design</h4>
+                        </a>
+                        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna.</p>
+                        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+                    </div>
                 </div>
-
-                <div class="row" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="member">
-                            <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                            <div class="member-content">
-                                <h4>Walter White</h4>
-                                <span>Web Development</span>
-                                <p>
-                                    Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
-                                </p>
-                                <div class="social">
-                                    <a href=""><i class="icofont-twitter"></i></a>
-                                    <a href=""><i class="icofont-facebook"></i></a>
-                                    <a href=""><i class="icofont-instagram"></i></a>
-                                    <a href=""><i class="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="member">
-                            <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                            <div class="member-content">
-                                <h4>Sarah Jhinson</h4>
-                                <span>Marketing</span>
-                                <p>
-                                    Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                                </p>
-                                <div class="social">
-                                    <a href=""><i class="icofont-twitter"></i></a>
-                                    <a href=""><i class="icofont-facebook"></i></a>
-                                    <a href=""><i class="icofont-instagram"></i></a>
-                                    <a href=""><i class="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="member">
-                            <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-                            <div class="member-content">
-                                <h4>William Anderson</h4>
-                                <span>Content</span>
-                                <p>
-                                    Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                                </p>
-                                <div class="social">
-                                    <a href=""><i class="icofont-twitter"></i></a>
-                                    <a href=""><i class="icofont-facebook"></i></a>
-                                    <a href=""><i class="icofont-instagram"></i></a>
-                                    <a href=""><i class="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
-        </section><!-- End Trainers Section -->
+        </div>
+        <!-- /course list -->
+        <!-- mobile see all button -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="courses.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /courses -->
 
-    </main><!-- End #main -->
+<!-- cta -->
+<section class="section bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h6 class="text-white font-secondary mb-0">Click to Join the Advance Workshop</h6>
+                <h2 class="section-title text-white">Training In Advannce Networking</h2>
+                <a href="contact.html" class="btn btn-secondary">join now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /cta -->
+
+<!-- success story -->
+<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-4 position-relative success-video">
+                <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
+                    <i class="ti-control-play"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 col-sm-8">
+                <div class="bg-white p-5">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /success story -->
+
+<!-- events -->
+<section class="section bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center section-title justify-content-between">
+                    <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
+                    <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+                    <div>
+                        <a href="events.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- event -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <div class="card-img position-relative">
+                        <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+                        <div class="card-date"><span>18</span><br>December</div>
+                    </div>
+                    <div class="card-body">
+                        <!-- location -->
+                        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
+                        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
+                    </div>
+                </div>
+            </div>
+            <!-- event -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <div class="card-img position-relative">
+                        <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
+                        <div class="card-date"><span>21</span><br>December</div>
+                    </div>
+                    <div class="card-body">
+                        <!-- location -->
+                        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
+                        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
+                    </div>
+                </div>
+            </div>
+            <!-- event -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <div class="card-img position-relative">
+                        <img class="card-img-top rounded-0" src="images/events/event-3.jpg" alt="event thumb">
+                        <div class="card-date"><span>23</span><br>December</div>
+                    </div>
+                    <div class="card-body">
+                        <!-- location -->
+                        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
+                        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile see all button -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="course.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /events -->
+
+<!-- teachers -->
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="section-title">Our Teachers</h2>
+            </div>
+            <!-- teacher -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/teachers/teacher-1.jpg" alt="teacher">
+                    <div class="card-body">
+                        <a href="teacher-single.html">
+                            <h4 class="card-title">Jacke Masito</h4>
+                        </a>
+                        <p>Teacher</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- teacher -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/teachers/teacher-2.jpg" alt="teacher">
+                    <div class="card-body">
+                        <a href="teacher-single.html">
+                            <h4 class="card-title">Clark Malik</h4>
+                        </a>
+                        <p>Teacher</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- teacher -->
+            <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card border-0 rounded-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/teachers/teacher-3.jpg" alt="teacher">
+                    <div class="card-body">
+                        <a href="teacher-single.html">
+                            <h4 class="card-title">John Doe</h4>
+                        </a>
+                        <p>Teacher</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
+                            <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /teachers -->
+
+<!-- blog -->
+<section class="section pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Latest News</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- blog post -->
+            <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+                    <div class="card-body">
+                        <!-- post meta -->
+                        <ul class="list-inline mb-3">
+                            <!-- post date -->
+                            <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
+                            <!-- author -->
+                            <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
+                        </ul>
+                        <a href="blog-single.html">
+                            <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+                        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+                    </div>
+                </div>
+            </article>
+            <!-- blog post -->
+            <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+                    <div class="card-body">
+                        <!-- post meta -->
+                        <ul class="list-inline mb-3">
+                            <!-- post date -->
+                            <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
+                            <!-- author -->
+                            <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
+                        </ul>
+                        <a href="blog-single.html">
+                            <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+                        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+                    </div>
+                </div>
+            </article>
+            <!-- blog post -->
+            <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+                    <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+                    <div class="card-body">
+                        <!-- post meta -->
+                        <ul class="list-inline mb-3">
+                            <!-- post date -->
+                            <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
+                            <!-- author -->
+                            <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
+                        </ul>
+                        <a href="blog-single.html">
+                            <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
+                        </a>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
+                        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- /blog -->
 </x-frontend>

@@ -1,249 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Educenter</title>
 
-    <title>Mentor Bootstrap Template - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Favicons -->
-    <link href="{{asset('frontend/assets/img/favicon.png')}}" rel="icon">
-    <link href="{{asset('frontend/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/bootstrap/bootstrap.min.css')}}">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/slick/slick.css')}}">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/themify-icons/themify-icons.css')}}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/animate/animate.css')}}">
+    <!-- aos -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/aos/aos.css')}}">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="{{asset('frontend/plugins/venobox/venobox.css')}}">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{asset('frontend/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
 
-    <!-- Template Main CSS File -->
-    <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: Mentor - v3.0.0
-    * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-    <style>
-        body {
-            background-color: #eeeeee59
-        }
-
-        .footer-subscribe input[type=text] {
-            border: 1px solid #ff3514;
-            border-radius: 55px;
-            font-size: 12px;
-            padding: 12px 40% 12px 20px;
-            background: transparent;
-            width: 98%;
-            box-shadow: none !important
-        }
-
-        .mt-100 {
-            margin-top: 200px
-        }
-
-        a,
-        button[type="submit"],
-        input[type=text] {
-            color: #333;
-            text-decoration: none;
-            -webkit-transition: all 400ms ease-in-out;
-            -moz-transition: all 400ms ease-in-out;
-            -o-transition: all 400ms ease-in-out;
-            -ms-transition: all 400ms ease-in-out;
-            transition: all 400ms ease-in-out
-        }
-
-        .footer-subscribe .btn-theme {
-            position: absolute;
-            top: 0;
-            height: 100%;
-            right: 0
-        }
-
-        .btn-theme:hover {
-            box-shadow: none
-        }
-
-        .btn-theme {
-            color: #FFF !important;
-            padding: 0.5rem 1.9rem;
-            font-weight: 400;
-            font-size: 0.875rem;
-            display: inline-block;
-            display: inline-flex;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            overflow: hidden;
-            z-index: 2;
-            align-items: center;
-            position: relative;
-            cursor: pointer;
-            -webkit-box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
-            -moz-box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
-            box-shadow: 0px 14px 47px 0px rgba(28, 28, 28, 0.24);
-            -webkit-border-radius: 70px;
-            -moz-border-radius: 70px;
-            border-radius: 70px
-        }
-
-        .bg-orange {
-            background: #ff3514
-        }
-    </style>
 </head>
 
 <body>
+<!-- preloader start -->
+<div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+</div>
+<!-- preloader end -->
 
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-        <h1 class="logo"><a href="index.html">Zeekwat</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <nav class="nav-menu d-none d-lg-block">
-            <ul>
-                <li class="drop-down"><a href="">Categories</a>
-                    <ul>
-                        <li><a href="#">Drop Down 1</a></li>
-                        <li class="drop-down"><a href="#">Deep Drop Down</a>
-                            <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Drop Down 2</a></li>
-                        <li><a href="#">Drop Down 3</a></li>
-                        <li><a href="#">Drop Down 4</a></li>
+<!-- header -->
+<header class="fixed-top header">
+    <!-- top header -->
+    <div class="top-header py-2 bg-white">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4 text-center text-lg-left">
+                    <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+                    <ul class="list-inline d-inline">
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
                     </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-        </nav><!-- .nav-menu -->
-
-        <a href="courses.html" class="get-started-btn">Login</a>
-        <a href="courses.html" class="get-started-btn">sign up</a>
-
+                </div>
+                <div class="col-lg-8 text-center text-lg-right">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</header><!-- End Header -->
+    <!-- navbar -->
+    <div class="navigation w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item @@about">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item @@courses">
+                            <a class="nav-link" href="courses.html">COURSES</a>
+                        </li>
+                        <li class="nav-item @@events">
+                            <a class="nav-link" href="events.html">EVENTS</a>
+                        </li>
+                        <li class="nav-item @@blog">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item dropdown view">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="teacher.html">Teacher</a>
+                                <a class="dropdown-item" href="teacher-single.html">Teacher Single</a>
+                                <a class="dropdown-item" href="notice.html">Notice</a>
+                                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
+                                <a class="dropdown-item" href="research.html">Research</a>
+                                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
+                                <a class="dropdown-item" href="course-single.html">Course Details</a>
+                                <a class="dropdown-item" href="event-single.html">Event Details</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item @@contact">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
 {{$slot}}
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
-
-    <div class="footer-top">
+<!-- footer -->
+<footer>
+    <!-- newsletter -->
+    <div class="newsletter">
         <div class="container">
             <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>Mentor</h3>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-                </div>
-
-                <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-6 footer-newsletter">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                    <h3 class="text-white">Subscribe Now</h3>
+                    <form action="#">
+                        <div class="input-wrapper">
+                            <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+                            <button type="submit" value="send" class="btn btn-primary">Join</button>
+                        </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
-
-    <div class="container d-md-flex py-4">
-
-        <div class="me-md-auto text-center text-md-start">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+    <!-- footer content -->
+    <div class="footer bg-footer section border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                    <!-- logo -->
+                    <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+                        <li class="mb-2">+1 (2) 345 6789</li>
+                        <li class="mb-2">+1 (2) 345 6789</li>
+                        <li class="mb-2">contact@yourdomain.com</li>
+                    </ul>
+                </div>
+                <!-- company -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    <h4 class="text-white mb-5">COMPANY</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                        <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+                        <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                        <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- links -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    <h4 class="text-white mb-5">LINKS</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                        <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+                        <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+                        <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <!-- support -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    <h4 class="text-white mb-5">SUPPORT</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+                    </ul>
+                </div>
+                <!-- support -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                    <h4 class="text-white mb-5">RECOMMEND</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+                        <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
     </div>
-</footer><!-- End Footer -->
+    <!-- copyright -->
+    <div class="copyright py-4 bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 text-sm-left text-center">
+                    <p class="mb-0">Copyright
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script>
+                        © themefisher</p>
+                </div>
+                <div class="col-sm-5 text-sm-right text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+                        <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
 
-<a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-<div id="preloader"></div>
+<!-- jQuery -->
+<script src="{{asset('frontend/plugins/jQuery/jquery.min.js')}}"></script>
+<!-- Bootstrap JS -->
+<script src="{{asset('frontend/plugins/bootstrap/bootstrap.min.js')}}"></script>
+<!-- slick slider -->
+<script src="{{asset('frontend/plugins/slick/slick.min.js')}}"></script>
+<!-- aos -->
+<script src="{{asset('frontend/plugins/aos/aos.js')}}"></script>
+<!-- venobox popup -->
+<script src="{{asset('frontend/plugins/venobox/venobox.min.js')}}"></script>
+<!-- filter -->
+<script src="{{asset('frontend/plugins/filterizr/jquery.filterizr.min.js')}}"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="{{asset('frontend/plugins/google-map/gmap.js')}}"></script>
 
-<!-- Vendor JS Files -->
-<script src="{{asset('frontend/assets/vendor/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/php-email-form/validate.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/counterup/counterup.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
-<script src="{{asset('frontend/assets/vendor/aos/aos.js')}}"></script>
-
-<!-- Template Main JS File -->
-<script src="{{asset('frontend/assets/js/main.js')}}"></script>
+<!-- Main Script -->
+<script src="{{asset('frontend/js/script.js')}}"></script>
 
 </body>
-
 </html>
-<script>
-    import Input from "@/Jetstream/Input";
-    export default {
-        components: {Input}
-    }
-</script>
