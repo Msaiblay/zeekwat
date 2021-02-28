@@ -1,291 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-
-    <!-- Title Page-->
-    <title>Dashboard 2</title>
-
-    <!-- Fontfaces CSS-->
-    <link href="{{asset('teacherbackend/css/font-face.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
-    <link href="{{asset('teacherbackend/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet')}}" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="{{asset('teacherbackend/vendor/animsition/animsition.min.css" rel="stylesheet')}}" media="all">
-    <link href="{{asset('teacherbackend/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/wow/animate.css" rel="stylesheet')}}" media="all">
-    <link href="{{asset('teacherbackend/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/slick/slick.css" rel="stylesheet')}}" media="all">
-    <link href="{{asset('teacherbackend/vendor/select2/select2.min.css" rel="stylesheet')}}" media="all">
-    <link href="{{asset('teacherbackend/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('teacherbackend/vendor/vector-map/jqvmap.min.css')}}" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="{{asset('teacherbackend/css/theme.css')}}" rel="stylesheet" media="all">
-
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="{{asset('backend/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('backend/assets/vendors/css/vendor.bundle.base.css')}}">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="{{asset('backend/assets/css/style.css')}}">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="{{asset('backend/assets/images/favicon.ico')}}" />
 </head>
-
-<body class="animsition">
-<div class="page-wrapper">
-    <!-- MENU SIDEBAR-->
-    <aside class="menu-sidebar2">
-        <div class="logo">
-            <a href="#">
-                <img src="images/icon/logo-white.png" alt="Cool Admin" />
-            </a>
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg" alt="logo" /></a>
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
         </div>
-        <div class="menu-sidebar2__content js-scrollbar1">
-            <div class="account2">
-                <div class="image img-cir img-120">
-                    <img src="images/icon/avatar-big-01.jpg" alt="John Doe" />
-                </div>
-                <h4 class="name">john doe</h4>
-                <a href="#">Sign out</a>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu"></span>
+            </button>
+            <div class="search-field d-none d-md-block">
+                <form class="d-flex align-items-center h-100" action="#">
+                    <div class="input-group">
+                        <div class="input-group-prepend bg-transparent">
+                            <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                        </div>
+                        <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+                    </div>
+                </form>
             </div>
-            <nav class="navbar-sidebar2">
-                <ul class="list-unstyled navbar__list">
-                    <li class="active has-sub">
-
-                        <a href="index.html">
-                            <i class="fas fa-tachometer-alt"></i>Overview</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-deskpro"></i>Profile</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-basket"></i>course</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-shopping-basket"></i>Students List</a>
-                    </li>
-                    <li>
-                        <a href="inbox.html">
-                            <i class="fas fa-mail-forward"></i>Inbox</a>
-                        <span class="inbox-num">3</span>
-                    </li>
-                </ul>
-            </nav>
+            <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item nav-profile dropdown">
+                    <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                        <div class="nav-profile-img">
+                            <img src="assets/images/faces/face1.jpg" alt="image">
+                            <span class="availability-status online"></span>
+                        </div>
+                        <div class="nav-profile-text">
+                            <p class="mb-1 text-black">David Greymaax</p>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+                    </div>
+                </li>
+                <li class="nav-item d-none d-lg-block full-screen-link">
+                    <a class="nav-link">
+                        <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                        <i class="mdi mdi-email-outline"></i>
+                        <span class="count-symbol bg-warning"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                        <h6 class="p-3 mb-0">Messages</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <img src="assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                                <p class="text-gray mb-0"> 1 Minutes ago </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <img src="assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                                <p class="text-gray mb-0"> 15 Minutes ago </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <img src="assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                                <p class="text-gray mb-0"> 18 Minutes ago </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                        <i class="mdi mdi-bell-outline"></i>
+                        <span class="count-symbol bg-danger"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                        <h6 class="p-3 mb-0">Notifications</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-success">
+                                    <i class="mdi mdi-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                                <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-warning">
+                                    <i class="mdi mdi-settings"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                                <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-info">
+                                    <i class="mdi mdi-link-variant"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                                <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+                    </div>
+                </li>
+                <li class="nav-item nav-logout d-none d-lg-block">
+                    <a class="nav-link" href="#">
+                        <i class="mdi mdi-power"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-settings d-none d-lg-block">
+                    <a class="nav-link" href="#">
+                        <i class="mdi mdi-format-line-spacing"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+            </button>
         </div>
-    </aside>
-
-    <!-- END MENU SIDEBAR-->
-
-    <!-- PAGE CONTAINER-->
-    <div class="page-container2">
-        <!-- HEADER DESKTOP-->
-        <header class="header-desktop2">
-            <div class="section__content section__content--p30">
-                <div class="container-fluid">
-                    <div class="header-wrap2">
-                        <div class="logo d-block d-lg-none">
-                            <a href="#">
-                                <img src="{{asset('teacherbackend/images/icon/logo-white.png')}}" alt="CoolAdmin" />
-                            </a>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <ul class="nav">
+                <li class="nav-item nav-profile">
+                    <a href="#" class="nav-link">
+                        <div class="nav-profile-image">
+                            <img src="{{asset('backend/assets/images/faces/face1.jpg')}}" alt="profile">
+                            <span class="login-status online"></span>
+                            <!--change to offline or busy as needed-->
                         </div>
-                        <div class="header-button2">
-                            <div class="header-button-item js-item-menu">
-                                <i class="zmdi zmdi-search"></i>
-                                <div class="search-dropdown js-dropdown">
-                                    <form action="">
-                                        <input class="au-input au-input--full au-input--h65" type="text" placeholder="Search for datas &amp; reports..." />
-                                        <span class="search-dropdown__icon">
-                                                <i class="zmdi zmdi-search"></i>
-                                            </span>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="header-button-item has-noti js-item-menu">
-                                <i class="zmdi zmdi-notifications"></i>
-                                <div class="notifi-dropdown js-dropdown">
-                                    <div class="notifi__title">
-                                        <p>You have 3 Notifications</p>
-                                    </div>
-                                    <div class="notifi__item">
-                                        <div class="bg-c1 img-cir img-40">
-                                            <i class="zmdi zmdi-email-open"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p>You got a email notification</p>
-                                            <span class="date">April 12, 2018 06:50</span>
-                                        </div>
-                                    </div>
-                                    <div class="notifi__item">
-                                        <div class="bg-c2 img-cir img-40">
-                                            <i class="zmdi zmdi-account-box"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p>Your account has been blocked</p>
-                                            <span class="date">April 12, 2018 06:50</span>
-                                        </div>
-                                    </div>
-                                    <div class="notifi__item">
-                                        <div class="bg-c3 img-cir img-40">
-                                            <i class="zmdi zmdi-file-text"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p>You got a new file</p>
-                                            <span class="date">April 12, 2018 06:50</span>
-                                        </div>
-                                    </div>
-                                    <div class="notifi__footer">
-                                        <a href="#">All notifications</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-button-item mr-0 js-sidebar-btn">
-                                <i class="zmdi zmdi-menu"></i>
-                            </div>
-                            <div class="setting-menu js-right-sidebar d-none d-lg-block">
-                                <div class="account-dropdown__body">
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-account"></i>Account</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-settings"></i>Setting</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-money-box"></i>Billing</a>
-                                    </div>
-                                </div>
-                                <div class="account-dropdown__body">
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-globe"></i>Language</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-pin"></i>Location</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-email"></i>Email</a>
-                                    </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-notifications"></i>Notifications</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="nav-profile-text d-flex flex-column">
+                            <span class="font-weight-bold mb-2">David Grey. H</span>
+                            <span class="text-secondary text-small">Teacher</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+                        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span class="menu-title">Dashboard</span>
+                        <i class="mdi mdi-home menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/mdi.html">
+                        <span class="menu-title">My Course</span>
+                        <i class="mdi mdi-contacts menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/mdi.html">
+                        <span class="menu-title">My Student</span>
+                        <i class="mdi mdi-contacts menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html">
+                        <span class="menu-title">Wallet</span>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html">
+                        <span class="menu-title">Profile</span>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html">
+                        <span class="menu-title">Inbox</span>
+                        <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    </a>
+                </li>
+            </ul>
 
-        <aside class="menu-sidebar2 js-right-sidebar d-block d-lg-none">
-            <div class="logo">
-                <a href="#">
-                    <img src="{{asset('teacherbackend/images/icon/logo-white.png')}}" alt="Cool Admin" />
-                </a>
-            </div>
-            <div class="menu-sidebar2__content js-scrollbar2">
-                <div class="account2">
-                    <div class="image img-cir img-120">
-                        <img src="{{asset('teacherbackend/images/icon/avatar-big-01.jpg')}}" alt="John Doe" />
-                    </div>
-                    <h4 class="name">john doe</h4>
-                    <a href="#">Sign out</a>
-                </div>
-                <nav class="navbar-sidebar2">
-                    <ul class="list-unstyled navbar__list">
+        </nav><div class="main-panel">
+            <div class="content-wrapper">
 
-                        <li>
-                            <a href="index.html">
-                                <i class="fas fa-tachometer-alt"></i>Overview 1</a>
-                        </li>
-                        <li>
-                            <a href="inbox.html">
-                                <i class="fas fa-chart-bar"></i>Courses</a>
-                        </li>
-                        <li class="active has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Studebt list
-                                <span class="arrow">
-                                        <i class="fas fa-angle-down"></i>
-                                    </span>
-                            </a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">
-                                        <i class="fas fa-tachometer-alt"></i>python student</a>
-                                </li>
-                                <li>
-                                    <a href="index2.html">
-                                        <i class="fas fa-tachometer-alt"></i>php Student</a>
-                                </li>
-                                <li>
-                                    <a href="index3.html">
-                                        <i class="fas fa-tachometer-alt"></i>Android Student</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-chart-bar"></i>Wallet</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-chart-bar"></i>inbox</a>
-                            <span class="inbox-num">3</span>
-                        </li>
-                    </ul>
-                </nav>
+                {{$slot}}
             </div>
-        </aside>
-        <!-- END HEADER DESKTOP-->
-
-    {{$slot}}
-        <!-- END PAGE CONTAINER-->
+        </div>
     </div>
-
+    <footer class="footer">
+        <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates </a> from Bootstrapdash.com</span>
+        </div>
+    </footer>
+    <!-- main-panel ends -->
 </div>
-
-<!-- Jquery JS-->
-<script src="{{asset('teacherbackend/vendor/jquery-3.2.1.min.js')}}"></script>
-<!-- Bootstrap JS-->
-<script src="{{asset('teacherbackend/vendor/bootstrap-4.1/popper.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
-<!-- Vendor JS       -->
-<script src="{{asset('teacherbackend/vendor/slick/slick.min.js')}}">
-</script>
-<script src="{{asset('teacherbackend/vendor/wow/wow.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/animsition/animsition.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
-</script>
-<script src="{{asset('teacherbackend/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/counter-up/jquery.counterup.min.js')}}">
-</script>
-<script src="{{asset('teacherbackend/vendor/circle-progress/circle-progress.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/chartjs/Chart.bundle.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/select2/select2.min.js')}}">
-</script>
-<script src="{{asset('teacherbackend/vendor/vector-map/jquery.vmap.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/vector-map/jquery.vmap.min.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/vector-map/jquery.vmap.sampledata.js')}}"></script>
-<script src="{{asset('teacherbackend/vendor/vector-map/jquery.vmap.world.js')}}')}}"></script>
-
-<!-- Main JS-->
-<script src="{{asset('teacherbackend/js/main.js')}}"></script>
-
+<!-- page-body-wrapper ends -->
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="{{asset('backend/assets/vendors/js/vendor.bundle.base.js')}}"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="{{asset('backend/assets/vendors/chart.js/Chart.min.js')}}"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="{{asset('backend/assets/js/off-canvas.js')}}"></script>
+<script src="{{asset('backend/assets/js/hoverable-collapse.js')}}"></script>
+<script src="{{asset('backend/assets/js/misc.js')}}"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="{{asset('backend/assets/js/dashboard.js')}}"></script>
+<script src="{{asset('backend/assets/js/todolist.js')}}"></script>
+<!-- End custom js for this page -->
 </body>
-
 </html>
-<!-- end document-->

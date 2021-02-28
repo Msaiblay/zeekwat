@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CoureController;
+use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\SubategoryController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -27,7 +30,10 @@ use App\Http\Controllers\FrotendController;
 });*/
 
 Route::resource('/',FrotendController::class);
-Route::resource('/course',CoureController::class);
+Route::resource('/teachercourses',CoureController::class);
+Route::resource('/categories',CategoryController::class);
+Route::resource('/subcategories',SubategoryController::class);
+Route::resource('/languages',LanguageController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
