@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-//        $this->call(LanguageSeeder::class);
-//        $this->call(CategorySeeder::class);
-//        $this->call(SubcategorySeeder::class);
+       $this->call(LanguageSeeder::class);
+       $this->call(CategorySeeder::class);
+       $this->call(SubcategorySeeder::class);
     }
 }
