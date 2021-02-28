@@ -14,7 +14,7 @@
         <div class="col-lg-12 stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <table id="add-row" class="table table-hover">
                         <thead>
                         <tr>
                             <th>No. </th>
@@ -31,6 +31,13 @@
                                 <button class="btn btn-rounded btn-warning">Edit</button></td>
                         </tr>
                         </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>No .</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                        </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>
