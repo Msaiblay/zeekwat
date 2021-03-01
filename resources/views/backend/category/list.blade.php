@@ -10,26 +10,36 @@
     </div>
     <div class="row">
 
-        <button class="btn btn-success ml-auto mb-3">New Category</button>
+        <button class="btn btn-gradient-success ml-auto mb-3">New Category</button>
         <div class="col-lg-12 stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <table id="add-row" class="table table-hover table-bordered">
                         <thead>
                         <tr>
                             <th>No. </th>
-                            <th>Name</th>
+                            <th class="table-auto">Name</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
+                        @php
+                          $i=1
+                        @endphp
+                        @foreach($categories as $category)
+                            @php
+                            $id = $category->id;
+                            $name = $category->name;
+                            @endphp
                         <tr>
-                            <td>Jacob</td>
-                            <td>Photoshop</td>
+                            <td>{{$i++}}</td>
+                            <td>{{$name}}</td>
                             <td>
-                                <button class="btn btn-rounded btn-danger ">Delete</button>
-                                <button class="btn btn-rounded btn-warning">Edit</button></td>
+                                <button class="btn btn-rounded btn-gradient-warning">Edit</button>
+                                <button class="btn btn-rounded btn-gradient-danger ">Delete</button>
+                            </td>
                         </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

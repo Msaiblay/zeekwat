@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Subcategory;
 use Illuminate\Http\Request;
 
 class SubategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        return view('backend.subcategory.list');
+        $subcategories=Subcategory::all();
+        $categories= Category::all();
+        return view('backend.subcategory.list',compact('subcategories','categories'));
     }
 
     /**

@@ -259,6 +259,8 @@
     <!-- End custom js for this page -->
 
 <!-- Datatables -->
+
+{{--<script src=".{{asset('backend/assets/js/jquery-ui.min.js')}}"></script>--}}
 <script src="{{asset('backend/assets/js/datatables.min.js')}}"></script>
 <!-- Atlantis JS -->
 <script src="{{asset('backend/assets/js/atlantis.js')}}"></script>

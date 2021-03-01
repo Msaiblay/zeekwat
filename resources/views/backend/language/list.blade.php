@@ -10,7 +10,7 @@
     </div>
     <div class="row">
 
-        <button class="btn btn-success ml-auto mb-3">New Language</button>
+        <button class="btn btn-gradient-success ml-auto mb-3">New Language</button>
         <div class="col-lg-12 stretch-card">
             <div class="card">
                 <div class="card-body">
@@ -23,13 +23,24 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @php
+                        $i = 1;
+                        @endphp
+                        @foreach($languages as $language)
+                            @php
+                            $id = $language->id;
+                            $name = $language->name;
+                            @endphp
+
                         <tr>
-                            <td>Jacob</td>
-                            <td>Photoshop</td>
+                            <td>{{$i++}}</td>
+                            <td>{{$name}}</td>
                             <td>
-                                <button class="btn btn-rounded btn-danger ">Delete</button>
-                                <button class="btn btn-rounded btn-warning">Edit</button></td>
+                                <button class="btn btn-rounded btn-gradient-warning">Edit</button>
+                                <button class="btn btn-rounded btn-gradient-danger ">Delete</button>
+                            </td>
                         </tr>
+                        @endforeach
                         </tbody>
                         <tfoot>
                         <tr>

@@ -2,18 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Language;
 use Illuminate\Http\Request;
 
 class LanguageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-       return view('backend.language.list');
+        $languages = Language::all();
+       return view('backend.language.list',compact('languages'));
     }
 
     /**
