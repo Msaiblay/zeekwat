@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -29,6 +30,77 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
+<!--<style>
+    .dropright {
+        position: relative;
+    }
+
+    .dropright .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+    }
+</style>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        /// some script
+
+        // jquery ready start
+        $(document).ready(function() {
+            // jQuery code
+
+            //////////////////////// Prevent closing from click inside dropdown
+            $(document).on('click', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+
+            // make it as accordion for smaller screens
+            if ($(window).width() < 992) {
+                $('.dropdown-menu a').click(function(e){
+                    e.preventDefault();
+                    if($(this).next('.submenu').length){
+                        $(this).next('.submenu').toggle();
+                    }
+                    $('.dropdown').on('hide.bs.dropdown', function () {
+                        $(this).find('.submenu').hide();
+                    })
+                });
+            }
+
+        }); // jquery end
+    </script>
+
+    <style type="text/css">
+        @media (min-width: 992px){
+
+            .dropdown-menu .dropdown-menu{
+                margin-left:0;
+                margin-right: 0;
+            }
+
+            .dropdown-menu li{
+                position: relative;
+            }
+            .nav-item .submenu{
+                display: none;
+                position: absolute;
+                left:100%;
+                top:-7px;
+            }
+
+            .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+            .dropdown-menu > li:hover > .submenu{
+                display: block;
+            }
+        }
+    </style>
 
 </head>
 
@@ -42,78 +114,73 @@
 <!-- header -->
 <header class="fixed-top header">
     <!-- top header -->
-    <div class="top-header py-2 bg-white">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-4 text-center text-lg-left">
-                    <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
-                    <ul class="list-inline d-inline">
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-8 text-center text-lg-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- navbar -->
     <div class="navigation w-100">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#main_nav"
                         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Category  </a>
+                            <ul class="dropdown-menu">
+                                @foreach($data[0] as $category)
+                                <li>
+                                    <a class="dropdown-item" href="#"> {{$category->name}} &raquo </a>
+                                    <ul class="submenu dropdown-menu">
+                                        @php
+                                        $categoryid = $category->id;
+                                        @endphp
+                                        @foreach($data[1] as $subcategory)
+                                            @if($subcategory->category_id == $categoryid )
+                                        <li><a class="dropdown-item" href="">{{$subcategory->name}}</a></li>
+                                            @endif
+                                        @endforeach
+                                    </ul>
+                                </li>
+                                @endforeach
+                            </ul>
                         </li>
-                        <li class="nav-item @@about">
-                            <a class="nav-link" href="about.html">About</a>
+
+                        <li class="nav-item @@about" style="padding:30px 0; width: 300px">
+                            <input type="search" placeholder="Search course" class="form-control rounded " >
                         </li>
-                        <li class="nav-item @@courses">
-                            <a class="nav-link" href="courses.html">COURSES</a>
-                        </li>
-                        <li class="nav-item @@events">
-                            <a class="nav-link" href="events.html">EVENTS</a>
+                        @guest
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{{route('login')}}">Login</a>
                         </li>
                         <li class="nav-item @@blog">
-                            <a class="nav-link" href="blog.html">BLOG</a>
+                            <a class="nav-link" href="{{route('studentregister')}}">Register</a>
                         </li>
+                        @else
                         <li class="nav-item dropdown view">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                Pages
+
+name
+
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="teacher.html">Teacher</a>
-                                <a class="dropdown-item" href="teacher-single.html">Teacher Single</a>
-                                <a class="dropdown-item" href="notice.html">Notice</a>
-                                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
-                                <a class="dropdown-item" href="research.html">Research</a>
-                                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
-                                <a class="dropdown-item" href="course-single.html">Course Details</a>
-                                <a class="dropdown-item" href="event-single.html">Event Details</a>
-                                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
+                                <a class="dropdown-item" href="teacher.html">Profile</a>
+                                <a class="dropdown-item" href="teacher-single.html">my course</a><hr>
+                                <a  class="dropdown-item"  href="javascript:void(0)" onclick="event.preventDefault();document.getElementById('logout-form').submit();">logout</a>
+                                <form id="logout-form" action="{{route('logout')}}" method="post" style="display:none">
+                                    @csrf
+                                </form>
                             </div>
                         </li>
+                        @endguest
                         <li class="nav-item @@contact">
                             <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
+
+
                 </div>
             </nav>
         </div>
@@ -241,6 +308,21 @@
 
 <!-- Main Script -->
 <script src="{{asset('frontend/js/script.js')}}"></script>
+<!--<script>
+    $(document).ready(function() {
+        $('.dropright button').on("click", function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            if (!$(this).next('div').hasClass('show')) {
+                $(this).next('div').addClass('show');
+            } else {
+                $(this).next('div').removeClass('show');
+            }
+
+        });
+    });
+</script>-->
 
 </body>
 </html>

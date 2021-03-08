@@ -11,19 +11,35 @@
                                 <h3 class="mb-0">Student Register Form</h3>
                             </div>
                             <div class="card-body">
-                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" action="{{route('register')}}" method="POST">
+                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" action="{{route('studentregister')}}" method="POST">
                                     @csrf
+{{--                                    @method('get')--}}
                                     <div class="form-group">
-                                        <label for="uname1">email</label>
-                                        <input type="text" class="form-control form-control-lg rounded-0" name="email" id="uname1" required="">
+                                        <label for="uname1">Name</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="name" id="uname1" required="">
                                         <div class="invalid-feedback">Oops, you missed this one.</div>
                                     </div>
                                     <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control form-control-lg rounded-0" name="password" id="pwd1" required="" autocomplete="new-password">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0" name="email" id="email" required="">
+                                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                                    </div>
+<!--                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="email" class="form-control form-control-lg rounded-0" name="phone" id="phone" required="">
+                                        <div class="invalid-feedback">Oops, you missed this one.</div>
+                                    </div>-->
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" name="password" id="password" required="" autocomplete="new-password">
                                         <div class="invalid-feedback">Enter your password too!</div>
                                     </div>
-                                    <button type="submit" class="btn btn-secondary btn-lg float-right" id="btnLogin">Login</button>
+                                    <div class="form-group">
+                                        <label for="confirmpassword">Confirm Password</label>
+                                        <input type="password" class="form-control form-control-lg rounded-0" name="confirmpassword" id="confirmpassword" required="" autocomplete="new-password">
+                                        <div class="invalid-feedback">Enter your password too!</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-lg float-right" id="btnLogin">Register</button>
                                 </form>
                             </div>
                             <!--/card-block-->

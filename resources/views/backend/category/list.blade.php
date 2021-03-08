@@ -9,8 +9,9 @@
         </nav>
     </div>
     <div class="row">
-
-        <button class="btn btn-gradient-success ml-auto mb-3">New Category</button>
+        <a class="btn btn-gradient-success ml-auto mb-3" href="{{route('categories.create')}}">
+            <i class='bx bx-plus'></i>
+        New Category</a>
         <div class="col-lg-12 stretch-card">
             <div class="card">
                 <div class="card-body">
@@ -35,8 +36,37 @@
                             <td>{{$i++}}</td>
                             <td>{{$name}}</td>
                             <td>
-                                <button class="btn btn-rounded btn-gradient-warning">Edit</button>
-                                <button class="btn btn-rounded btn-gradient-danger ">Delete</button>
+
+                               <a href="{{route('categories.edit',$id)}}" class="btn btn-warning">
+                                   
+                                <span class="btn-label">
+                                    
+                                    <i class="icofont-ui-settings">
+                                        
+                                    </i>
+                                </span>
+
+                                Edit
+
+
+
+
+                               </a>
+
+
+                            <form class="d-inline-block" action="{{route ('categories.destroy',$id)}}" method="POST" onsubmit="return confirm('Are you sure want to delete?')">
+                                @csrf
+                                @method('DELETE')
+
+
+
+                                
+                                    <span>
+                                    <i class="icofont-trash"></i>
+                                </span>
+                                   <button class="btn btn-rounded btn-gradient-danger ">Delete</button> 
+                                </button>
+                                </form>
                             </td>
                         </tr>
                         @endforeach

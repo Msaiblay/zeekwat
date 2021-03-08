@@ -2,7 +2,7 @@
     <div class="content">
         <div class="page-inner">
             <div class="page-header">
-                <h4 class="page-title"> Category </h4>
+                <h4 class="page-title"> language </h4>
                 <ul class="breadcrumbs">
                    <!--  <li class="nav-home">
                         <a href="#" class="text-decoration-none">
@@ -13,7 +13,7 @@
                         <i class="icofont-rounded-right"></i>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="text-decoration-none">Category</a>
+                        <a href="#" class="text-decoration-none">language</a>
                     </li>
                     <li class="separator">
                         <i class="icofont-rounded-right"></i>
@@ -31,17 +31,17 @@
                             <div class="d-flex align-items-center">
                                 <h4 class="card-title"> Create New </h4>
 
-                                <a class="btn btn-outline-primary btn-round ms-auto" href="{{ route('categories.index') }}">
+                                <a class="btn btn-outline-primary btn-round ms-auto" href="{{ route('languages.index') }}">
                                     <i class="icofont-rounded-double-left"></i>
                                     Go Back
                                 </a>
                             </div>
                         </div>
-                        <form action="{{ route('categories.store') }}" method="POST">
+                        <form action="{{ route('languages.store') }}" method="POST">
                             @csrf
                             <div class="card-body">
 
-                               
+
 
 
                                 <div class="form-group row">

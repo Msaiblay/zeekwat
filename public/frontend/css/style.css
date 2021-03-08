@@ -8,6 +8,7 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 @font-face {
   font-family: 'futura-bold';
@@ -15,7 +16,10 @@ VERSION:	Versoin Number
   font-weight: normal;
   font-style: normal;
 }
-
+/*start*/bg-purple {
+    background-color: var(--purple);
+}
+/*end*/
 body {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;

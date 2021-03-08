@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CoureController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\SubategoryController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -29,7 +30,17 @@ use App\Http\Controllers\FrotendController;
     ]);
 });*/
 
-Route::resource('/',FrotendController::class);
+Route::get('login',[AuthController::class,'loginform'])->name('login');
+Route::post('login',[AuthController::class,'login']);
+
+Route::get('studentregister',[AuthController::class,'studentregisterform'])->name('studentregister');
+Route::post('studentregister',[AuthController::class,'studentregister']);
+
+Route::get('teacherregister',[AuthController::class,'teacherregisterform'])->name('teacherregister');
+Route::post('teacherregister',[AuthController::class,'teacherregister']);
+
+Route::get('/',[FrotendController::class,'index'])->name('frontend.home');
+
 Route::resource('/teachercourses',CoureController::class);
 Route::resource('/categories',CategoryController::class);
 Route::resource('/subcategories',SubategoryController::class);

@@ -1,1 +1,1 @@
-TTTT
+sudo /opt/lampp/lampp start && php /opt/lampp/htdocs/zeekwat/artisan serve

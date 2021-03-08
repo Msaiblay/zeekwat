@@ -22,7 +22,7 @@ class SubategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.subcategory.new');
     }
 
     /**
@@ -42,10 +42,13 @@ class SubategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    public function show($id) {
+        $validator = $request->validate([
+            'name' => ['required', 'min:3', 'max:100', 'unique:subcategoriess'] ]);
+        $subcategories = new Subcategory();
+        $subcategories->name = $request->name; $subcategories->save();
+        return redirect()->route('subcategories.index')
+            ->with('successMsg','New Subcategory is ADDED in your data.'); }
 
     /**
      * Show the form for editing the specified resource.
@@ -55,7 +58,9 @@ class SubategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+         $subcategories = Subcategory::find($id);
+
+        return view('backend.subcategory.edit',compact('subcategories'));
     }
 
     /**
@@ -67,7 +72,15 @@ class SubategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $name = $request->name;
+
+        $data = [
+            'name'  =>  $name
+        ];
+
+        Subcategory::where('id',$id)->update($data);
+
+        return redirect()->route('subcategories.index')->with('successMsg','Existing language is UPDATED in your data.');
     }
 
     /**
@@ -78,6 +91,9 @@ class SubategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+         $subcategories = Subcategory::find($id);
+        $lsubcategories->delete();
+
+        return redirect()->route('subcategories.index')->with('successMsg','Existing Language:'.$subcategories->name.' is DELETED in your data.');
     }
 }
