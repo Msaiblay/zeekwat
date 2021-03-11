@@ -40,32 +40,12 @@
                                 <td>{{$categoryname}}</td>
                                 <td>
 
-                                    <a href="{{route('subcategories.edit',$id)}}" class="btn btn-warning">
-
-                                <span class="btn-label">
-
-                                    <i class="icofont-ui-settings">
-
-                                    </i>
-                                </span>
-
-                                        Edit
-
-
-
-
-                                    </a>
-
+                                    <a href="{{route('subcategories.edit',$id)}}" class="btn btn-rounded btn-gradient-warning">
+                                        Edit </a>
 
                                     <form class="d-inline-block" action="{{route ('subcategories.destroy',$id)}}" method="POST" onsubmit="return confirm('Are you sure want to delete?')">
                                         @csrf
                                         @method('DELETE')
-
-
-
-
-                                        <span>
-                                    <i class="icofont-trash"></i>
                                 </span>
                                         <button class="btn btn-rounded btn-gradient-danger ">Delete</button>
                                     </form>

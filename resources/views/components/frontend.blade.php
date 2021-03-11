@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Educenter</title>
+    <title>ZeeKwat</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,7 +107,7 @@
 <body>
 <!-- preloader start -->
 <div class="preloader">
-    <img src="images/preloader.gif" alt="preloader">
+    <img src="{{asset('frontend/images/bb.gif')}}" alt="preloader" style="width: 100px">
 </div>
 <!-- preloader end -->
 
@@ -118,7 +118,7 @@
     <div class="navigation w-100">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
                 <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#main_nav"
                         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -213,7 +213,7 @@ name
             <div class="row">
                 <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
                     <!-- logo -->
-                    <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                    <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
                     <ul class="list-unstyled">
                         <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
                         <li class="mb-2">+1 (2) 345 6789</li>

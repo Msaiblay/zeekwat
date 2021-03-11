@@ -63,7 +63,7 @@
 </div>
 
 <!-- hero slider -->
-<section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
+<section class="hero-section overlay bg-cover" data-background="{{asset('frontend/images/banner/banner-1.jpg')}}">
     <div class="container">
         <div class="hero-slider">
             <!-- slider item -->
@@ -101,7 +101,7 @@
     <div class="container-fluid p-0">
         <div class="row no-gutters">
             <div class="col-xl-4 col-lg-5 align-self-end">
-                <img class="img-fluid w-100" src="images/banner/banner-feature.png" alt="banner-feature">
+                <img class="img-fluid w-100" src="{{asset('frontend/images/banner/banner-feature.png')}}" alt="banner-feature">
             </div>
             <div class="col-xl-8 col-lg-7">
                 <div class="row feature-blocks bg-gray justify-content-between">
@@ -147,7 +147,7 @@
                 <a href="about.html" class="btn btn-primary-outline">Learn more</a>
             </div>
             <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-                <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+                <img class="img-fluid w-100" src="{{asset('frontend/images/about/about-us.jpg')}}" alt="about image">
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-1.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -191,7 +191,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-2.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -209,7 +209,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-3.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -227,7 +227,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-4.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -245,7 +245,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-5.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -263,7 +263,7 @@
             <!-- course item -->
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card p-0 border-primary rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/courses/course-6.jpg')}}" alt="course thumb">
                     <div class="card-body">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
@@ -305,7 +305,7 @@
 <!-- /cta -->
 
 <!-- success story -->
-<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+<section class="section bg-cover" data-background="{{asset('frontend/images/backgrounds/success-story.jpg')}}">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-sm-4 position-relative success-video">
@@ -344,7 +344,7 @@
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
                     <div class="card-img position-relative">
-                        <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
+                        <img class="card-img-top rounded-0" src="{{asset('frontend/images/events/event-1.jpg')}}" alt="event thumb">
                         <div class="card-date"><span>18</span><br>December</div>
                     </div>
                     <div class="card-body">
@@ -358,7 +358,7 @@
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
                     <div class="card-img position-relative">
-                        <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
+                        <img class="card-img-top rounded-0" src="{{asset('frontend/images/events/event-2.jpg')}}" alt="event thumb">
                         <div class="card-date"><span>21</span><br>December</div>
                     </div>
                     <div class="card-body">
@@ -372,7 +372,7 @@
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
                     <div class="card-img position-relative">
-                        <img class="card-img-top rounded-0" src="images/events/event-3.jpg" alt="event thumb">
+                        <img class="card-img-top rounded-0" src="{{asset('frontend/images/events/event-3.jpg')}}" alt="event thumb">
                         <div class="card-date"><span>23</span><br>December</div>
                     </div>
                     <div class="card-body">
@@ -403,7 +403,7 @@
             <!-- teacher -->
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/teachers/teacher-1.jpg" alt="teacher">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/teachers/teacher-1.jpg')}}" alt="teacher">
                     <div class="card-body">
                         <a href="teacher-single.html">
                             <h4 class="card-title">Jacke Masito</h4>
@@ -421,7 +421,7 @@
             <!-- teacher -->
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/teachers/teacher-2.jpg" alt="teacher">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/teachers/teacher-2.jpg')}}" alt="teacher">
                     <div class="card-body">
                         <a href="teacher-single.html">
                             <h4 class="card-title">Clark Malik</h4>
@@ -439,7 +439,7 @@
             <!-- teacher -->
             <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card border-0 rounded-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/teachers/teacher-3.jpg" alt="teacher">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/teachers/teacher-3.jpg')}}" alt="teacher">
                     <div class="card-body">
                         <a href="teacher-single.html">
                             <h4 class="card-title">John Doe</h4>
@@ -471,7 +471,7 @@
             <!-- blog post -->
             <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/blog/post-1.jpg')}}" alt="Post thumb">
                     <div class="card-body">
                         <!-- post meta -->
                         <ul class="list-inline mb-3">
@@ -491,7 +491,7 @@
             <!-- blog post -->
             <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/blog/post-2.jpg')}}" alt="Post thumb">
                     <div class="card-body">
                         <!-- post meta -->
                         <ul class="list-inline mb-3">
@@ -511,7 +511,7 @@
             <!-- blog post -->
             <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
                 <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-                    <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
+                    <img class="card-img-top rounded-0" src="{{asset('frontend/images/blog/post-3.jpg')}}" alt="Post thumb">
                     <div class="card-body">
                         <!-- post meta -->
                         <ul class="list-inline mb-3">
