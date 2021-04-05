@@ -34,6 +34,7 @@
 								<a class="btn btn-outline-primary btn-round ms-auto" href="{{ route('categories.index') }}">
 									<i class="icofont-rounded-double-left"></i>
 									Go Back
+									
 								</a>
 							</div>
 						</div>
