@@ -118,7 +118,7 @@
     <div class="navigation w-100">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand" href="index.html"><img src="{{asset('frontend/images/logo.png')}}" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="{{asset('frontend/images/zeekwatlogo.png')}}" alt="logo" style="height:92px"></a>
                 <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#main_nav"
                         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -136,7 +136,7 @@
                                         @php
                                         $categoryid = $category->id;
                                         @endphp
-                                        @foreach($data[1] as $subcategory)
+                                        @foreach($data[0] as $subcategory)
                                             @if($subcategory->category_id == $categoryid )
                                         <li><a class="dropdown-item" href="">{{$subcategory->name}}</a></li>
                                             @endif

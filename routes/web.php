@@ -3,6 +3,9 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CoureController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\SubategoryController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Foundation\Application;
@@ -45,6 +48,8 @@ Route::resource('/teachercourses',CoureController::class);
 Route::resource('/categories',CategoryController::class);
 Route::resource('/subcategories',SubategoryController::class);
 Route::resource('/languages',LanguageController::class);
+Route::resource('/students',StudentController::class);
+Route::resource('/teachers',TeacherController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
