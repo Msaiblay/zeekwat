@@ -28,17 +28,20 @@ class AuthController extends Controller
         if (Hash::check($request->password,$user->password)){
 //            dd('ok');
             $role = $user->getRoleNames();
+//            $name = $user->id;
+//            dd($name);
 //            dd($rolecredinal);
+//            dd($role[0]);
             $credentials = $request->only('email','password');
             Auth::attempt($credentials);
             if ($role[0] == 'student'){
-                return redirect('/');
+                return redirect('/')->with(['userid' => $user->id]);
             }
-            elseif ($role[0] == 'Teacher' or $role == 'teacher'){
-                return redirect('/teachercourses');
+            elseif ($role[0] == 'teacher'){
+                return redirect('/teachercourses')->with(['userid' => $user->id]);
             }
             else{
-                return redirect('/categories');
+                return redirect('/categories')->with(['userid' => $user->id]);
             }
         }
 

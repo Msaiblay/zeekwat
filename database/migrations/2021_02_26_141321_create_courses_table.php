@@ -29,6 +29,7 @@ class CreateCoursesTable extends Migration
             $table->foreignId('language_id')->references('id')->on('languages')->onDelete('cascade');
 //            $table->foreignId('category_id')->references('id')->on('tcourses')->onDelete('cascade');
             $table->foreignId('subcategory_id')->references('id')->on('subcategories')->onDelete('cascade');
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
 
 
             $table->softDeletes();

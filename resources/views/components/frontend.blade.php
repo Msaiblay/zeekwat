@@ -136,7 +136,7 @@
                                         @php
                                         $categoryid = $category->id;
                                         @endphp
-                                        @foreach($data[0] as $subcategory)
+                                        @foreach($data[1] as $subcategory)
                                             @if($subcategory->category_id == $categoryid )
                                         <li><a class="dropdown-item" href="">{{$subcategory->name}}</a></li>
                                             @endif
@@ -161,8 +161,12 @@
                         <li class="nav-item dropdown view">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
+                                @foreach($data[2] as $user)
 
-name
+                                    @if($user->id == session()->get('userid'))
+                                    {{ $user->name }}
+                                    @endif
+                                    @endforeach
 
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -16,7 +16,7 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{asset('backend/assets/css/style.css')}}">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{asset('backend/assets/images/favicon.ico')}}" />
+    <link rel="shortcut icon" href="{{asset('backend/assets/images/favicon.ico')}}" >
 </head>
 <body>
 

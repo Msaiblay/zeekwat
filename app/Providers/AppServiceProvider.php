@@ -34,6 +34,7 @@ class AppServiceProvider extends ServiceProvider
         Builder::defaultStringLength(191);
         $categories = Category::all();
         $subcategories = Subcategory::all();
-        View::share('data',[$categories,$subcategories]);
+        $users = User::all();
+        View::share('data',[$categories,$subcategories,$users]);
     }
 }
