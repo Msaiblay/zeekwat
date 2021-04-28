@@ -30,17 +30,7 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('frontend/images/favicon.png')}}" type="image/x-icon">
-<!--<style>
-    .dropright {
-        position: relative;
-    }
 
-    .dropright .dropdown-menu {
-        top: 0;
-        left: 100%;
-        margin-top: -1px;
-    }
-</style>-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
 
